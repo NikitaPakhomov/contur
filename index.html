@@ -15,34 +15,35 @@
         <header class="header-container">
             <nav class="header__nav">
                 <ul class="header__ul">
-                    <li class="header__li"><a href='#' class='header__a'>Личное</a></li>
-                    <li class="header__li"><a href='#' class='header__a'>Образование</a></li>
-                    <li class="header__li"><a href='#' class='header__a'>Навыки</a></li>
-                    <li class="header__li"><a href='#' class='header__a'>Увлечения</a></li>
+                    <li class="header__li"><a href='#personal' class='header__a'>Личное</a></li>
+                    <li class="header__li"><a href='#learning' class='header__a'>Образование</a></li>
+                    <li class="header__li"><a href='#skill' class='header__a'>Навыки</a></li>
+                    <li class="header__li"><a href='#hobby' class='header__a'>Увлечения</a></li>
                 </ul>
             </nav>
             <ul class="header__soc">
                 <li class="header__link">
-                    <a href="#" class="header__adress"><img src="icons/icon__vk.svg" alt="vk" class="header__icon"></a>
+                    <a href="https://vk.com/iloveyoungniki" class="header__adress"><img src="icons/icon__vk.svg"
+                            alt="vk" class="header__icon"></a>
 
                 </li>
                 <li class="header__link">
-                    <a href="#" class="header__adress"><img src="icons/icon__github.svg" alt="github"
-                            class="header__icon"></a>
+                    <a href="https://github.com/NikitaPakhomov" class="header__adress"><img src="icons/icon__github.svg"
+                            alt="github" class="header__icon"></a>
                 </li>
 
             </ul>
         </header>
         <main>
             <div class="main__container">
-                <div class="personal">
+                <div class="personal" id="personal">
                     <div class="personal__family"> <span class="personal__familyspan">П</span>ахомов <span
                             class="personal__familyspan">Н</span>икита
                         <span class="personal__familyspan">В</span>ладимирович
                     </div>
                     <div class="personal__photo"><img class='personal__img' src="img/Niki.jpg" alt="I" srcset=""></div>
                 </div>
-                <div class="learning">
+                <div class="learning" id="learning">
                     <div class="learning_h2-cont">
                         <h2 class="learning_h2">Образование</h2>
                     </div>
@@ -61,10 +62,53 @@
 
 
                 </div>
-            </div>
+                <div class="skillAndHobby">
+                    <div class="skill" id="skill">
+                        <h2 class='shill__h2'>Навыки</h2>
+                        <div class="skill__info">
+                            <ul class="skill__ul">
+                                <li class="skill__li">HTML <img class='skill__img' src="icons/html.svg" alt="HTML"
+                                        srcset=""></li>
+                                <li class="skill__li">CSS <img class='skill__img' src="icons/css.svg" alt="CSS"
+                                        srcset="">
+                                </li>
+                                <li class="skill__li">Изучаю JS <img class='skill__img' src="icons/js.svg" alt="JS"
+                                        srcset=""></li>
+                                <li class="skill__li">Базовые знания Java <img class='skill__img' src="icons/java.svg"
+                                        alt="Java" srcset="">
+                                </li>
+                                <li class="skill__li">C++<img class='skill__img' src="icons/c++.svg" alt="C++"
+                                        srcset="">
+                                </li>
+                                <li class="skill__li">Начал изучать SQL<img class='skill__img' src="icons/sql.svg"
+                                        alt="SQL" srcset=""></li>
+                                <li class="skill__li">Adobe XD<img class='skill__img' src="icons/xd.svg" alt="Adobe XD"
+                                        srcset=""></li>
+                                <li class="skill__li">Adobe Photoshop<img class='skill__img' src="icons/photoshop.svg"
+                                        alt="Adobe photoshop" srcset=""></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="hobby" id="hobby">
+                        <h2 class="hobby__h2">Увлечения</h2>
+                        <div class="hobby__info">
+                            <ul class="hobby__ul">
+                                <li class="hobby__li">Программирование<img class='hobby__img' src="icons/proga.svg"
+                                        alt="proga" srcset=""></li>
+                                <li class="hobby__li">Футбол<img class='hobby__img' src="icons/football.svg"
+                                        alt="football" srcset="">
+                                </li>
+                                <li class="hobby__li">Экономики<img class='hobby__img' src="icons/economic.svg"
+                                        alt="economic" srcset="">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
         </main>
     </div>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

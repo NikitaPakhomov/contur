@@ -4,8 +4,7 @@ body {
     background-color: #f4f4f4;
 }
 .container {
-    width: 100%;
-    max-width: 1920;
+    width: 90%;
     margin: 0 auto;
     margin-top: 20px;
 }
@@ -17,6 +16,9 @@ body {
 .header__nav {
     flex-basis: 70%;
     padding: 13px 0;
+    @media (max-width: 516px) {
+        flex-basis: 30%;
+    }
 }
 .header__ul {
     padding: 0;
@@ -27,8 +29,15 @@ body {
     align-self: center;
     align-items: center;
     list-style: none;
+    @media (max-width: 516px) {
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }
 .header__li {
+    @media (max-width: 516px) {
+        margin-bottom: 5px;
+    }
 }
 .header__a {
     color: #0f0e0e;
@@ -54,6 +63,12 @@ body {
         background-color: yellow;
         top: -40%;
         left: 30%;
+        @media (max-width: 516px) {
+            height: 100%;
+            width: 20%;
+            top: 0%;
+            left: 40%;
+        }
     }
 }
 .header__soc {
@@ -64,7 +79,11 @@ body {
 
     padding: 0;
     margin: 0;
+    @media (max-width: 516px) {
+        flex-basis: 5%;
+    }
 }
+
 .header__link {
     flex-basis: 30%;
     margin-right: 5px;
@@ -81,6 +100,9 @@ body {
     transition: 0.2s;
     &:hover {
         transform: scale(1.2);
+    }
+    @media (max-width: 516px) {
+        max-width: 50%;
     }
 }
 .header__icon {
@@ -99,6 +121,11 @@ body {
     justify-content: space-evenly;
     align-items: center;
     box-sizing: border-box;
+    @media (max-width: 516px) {
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 30px;
+    }
 
     position: relative;
     &::after {
@@ -106,8 +133,11 @@ body {
         content: "";
         width: 50%;
         left: 25%;
-        bottom: -60px;
+        bottom: -125px;
         border-bottom: 3px solid #8854ff;
+        @media (max-width: 516px) {
+            bottom: -20%;
+        }
     }
 }
 .personal__family {
@@ -118,6 +148,10 @@ body {
     max-width: 308px;
     position: relative;
     border: 3px solid #ff0079;
+    @media (max-width: 516px) {
+        order: 2;
+        margin-top: 30px;
+    }
 
     &::before {
         position: absolute;
@@ -136,6 +170,9 @@ body {
     flex-basis: 30%;
     max-width: 50%;
     max-height: 100%;
+    @media (max-width: 516px) {
+        order: 1;
+    }
 }
 .personal__img {
     object-fit: cover;
@@ -147,11 +184,15 @@ body {
 }
 //-------------------LEARNING------------------------
 .learning {
-    margin-top: 80px;
+    margin-top: 250px;
     font-family: "Poppins", sans-serif;
     font-size: 1.2rem;
+    @media (max-width: 516px) {
+        margin-top: 125px;
+    }
 }
 .learning_h2-cont {
+    margin-bottom: 80px;
 }
 .learning_h2 {
     text-align: center;
@@ -161,6 +202,10 @@ body {
     flex-direction: row;
     justify-content: space-around;
     position: relative;
+    @media (max-width: 516px) {
+        flex-direction: column;
+        align-items: center;
+    }
     &::before {
         position: absolute;
         content: "";
@@ -168,16 +213,27 @@ body {
         width: 0.2%;
         height: 100%;
         background-color: #a6004e;
+        @media (max-width: 516px) {
+            left: 0%;
+            top: 60%;
+            height: 0.4%;
+            width: 100%;
+        }
     }
 }
 .learning___info {
+    text-align: center;
     align-self: center;
     flex-basis: 40%;
     order: 2;
 }
 .learning__university {
+    text-align: center;
     flex-basis: 40%;
     order: 1;
+    @media (max-width: 516px) {
+        margin-bottom: 80px;
+    }
 }
 .learning__img {
     max-width: 100%;
@@ -197,4 +253,135 @@ body {
 }
 .yellow {
     border-bottom: 2px solid #f0ff00;
+}
+
+//---------------SKILLAndHobby-------------s
+.skillAndHobby {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    @media (max-width: 516px) {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    &::before {
+        z-index: -5;
+        position: absolute;
+        content: "";
+        width: 100px;
+        height: 100px;
+        top: 39.5%;
+        left: 45%;
+        border: 3px solid red;
+        border-radius: 50%;
+        @media (max-width: 862px) {
+            width: 50px;
+            height: 50px;
+            top: 47.5%;
+            left: 46%;
+        }
+        @media (max-width: 628px) {
+            display: none;
+        }
+    }
+    &::after {
+        z-index: -4;
+        position: absolute;
+        content: "";
+        width: 100px;
+        height: 100px;
+        top: 55%;
+        left: 50%;
+        border: 3px solid red;
+        @media (max-width: 862px) {
+            width: 50px;
+            height: 50px;
+        }
+        @media (max-width: 628px) {
+            display: none;
+        }
+    }
+}
+.skill {
+    font-family: "Poppins", sans-serif;
+}
+.shill__h2 {
+    text-align: center;
+    position: relative;
+    margin-bottom: 60px;
+    border: 6px solid #f0ff00;
+    @media (max-width: 516px) {
+        margin-bottom: 30px;
+    }
+}
+.skill__info {
+    height: 100%;
+}
+.skill__ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+.skill__li {
+    flex-basis: 12.5%;
+    position: relative;
+    font-size: 1.2rem;
+}
+.skill__img {
+    top: -25%;
+    position: absolute;
+    margin-left: 10px;
+    max-width: 32px;
+    height: 100%;
+    object-fit: contain;
+    object-position: right bottom;
+}
+.hobby {
+    font-family: "Poppins", sans-serif;
+    @media (max-width: 516px) {
+        margin-top: 30px;
+    }
+}
+.hobby__h2 {
+    text-align: center;
+    position: relative;
+    margin-bottom: 60px;
+    border: 6px solid #f0ff00;
+    @media (max-width: 516px) {
+        margin-bottom: 30px;
+    }
+}
+.hobby__info {
+    height: 100%;
+}
+.hobby__ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+.hobby__li {
+    flex-basis: 12.5%;
+    position: relative;
+    font-size: 1.2rem;
+}
+.hobby__img {
+    top: -25%;
+    position: absolute;
+    margin-left: 10px;
+    max-width: 32px;
+    height: 100%;
+    object-fit: contain;
+    object-position: right bottom;
 }
