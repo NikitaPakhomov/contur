@@ -229,6 +229,7 @@ body {
         -ms-flex-order: 2;
             order: 2;
     margin-top: 30px;
+    font-size: 2rem;
   }
 }
 
