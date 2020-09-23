@@ -219,6 +219,9 @@ body {
             height: 0.4%;
             width: 100%;
         }
+        @media (max-width: 420px) {
+            top: 40%;
+        }
     }
 }
 .learning___info {

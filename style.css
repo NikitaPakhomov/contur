@@ -335,6 +335,12 @@ body {
   }
 }
 
+@media (max-width: 420px) {
+  .learning___info-cont::before {
+    top: 40%;
+  }
+}
+
 .learning___info {
   text-align: center;
   -ms-flex-item-align: center;
